@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050507">
+  <meta name="description" content="NTSTUDIO — Your creative space.">
+  <title>NTSTUDIO | Discord Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./script.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="NTSTUDIO home">
+      <span class="brand-mark">NT</span>
+      <span class="brand-copy">NT<span class="brand-accent">STUDIO</span><small>CREATIVE COMMUNITY</small></span>
+    </a>
+
+    <span id="system-status" class="status"><i></i> SYSTEM ONLINE</span>
+
+    <div id="topbar-account" class="topbar-account" hidden>
+      <button id="topbar-profile" class="topbar-profile" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="account-menu">
+        <img id="topbar-avatar" src="./default-avatar.svg" alt="รูปโปรไฟล์ Discord">
+        <span id="topbar-username">Discord User</span>
+        <svg class="profile-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div id="account-menu" class="account-menu" role="menu" hidden>
+        <div class="menu-user">
+          <img id="menu-avatar" src="./default-avatar.svg" alt="">
+          <div class="menu-user-copy"><strong id="menu-name">Discord User</strong><small id="menu-username">Discord account</small></div>
+        </div>
+        <div class="menu-divider"></div>
+        <button id="topbar-logout" class="menu-logout" type="button" role="menuitem">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 5H5v14h5M14 8l4 4-4 4M8 12h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          ออกจากระบบ
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="login-view" class="auth-layout" hidden>
+      <div class="showcase-card">
+        <div class="showcase-topline">
+          <span class="showcase-mini-mark">NT</span>
+          <span>NTSTUDIO<small>CREATIVE COMMUNITY</small></span>
+        </div>
+        <div class="showcase-art" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="orbit orbit-three"></span>
+          <span class="art-star star-one">✦</span>
+          <span class="art-star star-two">✧</span>
+          <span class="art-star star-three">·</span>
+          <span class="art-core">NT<span>✦</span></span>
+          <span class="art-glow"></span>
+        </div>
+        <div class="showcase-caption">
+          <span class="showcase-category">YOUR CREATIVE SPACE</span>
+          <h1>Make things<br><span>happen.</span></h1>
+          <p>พื้นที่สำหรับคนสร้างสรรค์<br>เริ่มต้นประสบการณ์ของคุณที่นี่</p>
+        </div>
+        <div class="showcase-bottom"><span class="live-dot"></span> MADE FOR CREATORS <span class="bottom-star">✦</span></div>
+      </div>
+
+      <div class="login-panel">
+        <div class="login-panel-mark">NT<span>STUDIO</span></div>
+        <p class="card-label">WELCOME TO NTSTUDIO</p>
+        <h2>Join the<br><span>community.</span></h2>
+        <p class="card-copy">เข้าสู่ระบบเพื่อเข้าถึงพื้นที่ของคุณ</p>
+        <button id="login-button" class="discord-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.7 5.1A19 19 0 0 0 15 3.7l-.6 1.2a17.5 17.5 0 0 0-4.8 0L9 3.7a19 19 0 0 0-4.7 1.4C1.3 9.5.5 13.8.9 18a19 19 0 0 0 5.8 3l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13.6 13.6 0 0 0 11 0l.5.4a12 12 0 0 1-1.9.9l1.2 2a19 19 0 0 0 5.8-3c.5-4.9-.8-9.2-3.4-12.9ZM8.8 15.4c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm6.4 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/></svg>
+          <span>Continue with Discord</span>
+          <span class="button-arrow">↗</span>
+        </button>
+        <p class="privacy-note">เข้าสู่ระบบอย่างปลอดภัยด้วย Discord<br>เราไม่ขอรหัสผ่าน Discord ของคุณ</p>
+        <div class="login-divider"><span></span><i>✦</i><span></span></div>
+        <p class="terms-note">By continuing, you agree to our <span>Community Guidelines</span>.</p>
+      </div>
+    </section>
+
+    <section id="dashboard-view" class="dashboard" hidden>
+      <div class="welcome-pill"><i></i> AUTHENTICATION SUCCESSFUL</div>
+      <p class="dashboard-kicker">WELCOME BACK TO</p>
+      <h1 class="dashboard-title">NT<span>STUDIO</span><b>.</b></h1>
+      <p class="dashboard-copy">พื้นที่ของคุณ พร้อมให้สร้างสรรค์สิ่งใหม่ ๆ</p>
+      <article class="profile-card">
+        <div class="profile-banner"></div>
+        <div class="profile-content">
+          <img id="user-avatar" class="avatar" src="./default-avatar.svg" alt="รูปโปรไฟล์ Discord">
+          <div class="profile-info"><span class="profile-label">SIGNED IN AS</span><h2 id="user-global-name">Discord User</h2><p id="user-username">Discord account</p><span class="verified">✓ Discord connected</span></div>
+        </div>
+        <div class="profile-footer"><span><i></i> SESSION ACTIVE</span><button id="logout-button" class="logout-button" type="button">ออกจากระบบ ↗</button></div>
+      </article>
+    </section>
+    <p id="error-message" class="error-message" role="alert" hidden></p>
+  </main>
+
+  <footer><span>© <span id="year"></span> NTSTUDIO</span><span>DESIGNED FOR CREATORS <b>✦</b></span></footer>
+</body>
+</html>
