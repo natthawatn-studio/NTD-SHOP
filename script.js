@@ -18,8 +18,8 @@ document.querySelector("#year").textContent =
   new Date().getFullYear();
 
 const isConfigured =
-  SUPABASE_URL.startsWith("https://") &&
-  SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_");
+  SUPABASE_URL.startsWith("https://discord.com/oauth2/authorize?client_id=1564155996597784596&response_type=code&redirect_uri=https%3A%2F%2Fnatthawatn-studio.github.io%2FNTD-SHOP%2F&scope=identify") &&
+  SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_8kl1n2jHbuAf93RJedRTQg_6J7jyTU2");
 
 let supabase = null;
 
