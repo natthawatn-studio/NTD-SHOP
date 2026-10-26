@@ -5,8 +5,8 @@
  */
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
 
-const SUPABASE_URL = "https://YOUR_PROJECT_ID.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+const SUPABASE_URL = "https://discord.com/oauth2/authorize?client_id=780310431716868117&response_type=code&redirect_uri=https%3A%2F%2Fnatthawatn-studio.github.io%2FNTD-SHOP%2F&scope=identify";
+const SUPABASE_ANON_KEY = "of1sYzljQhCRYBeDb-JEKqMTA13Q6F4B";
 
 const loginView = document.querySelector("#login-view");
 const dashboardView = document.querySelector("#dashboard-view");
@@ -17,8 +17,8 @@ const logoutButton = document.querySelector("#logout-button");
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 const isConfigured =
-  !SUPABASE_URL.includes("YOUR_PROJECT_ID") &&
-  !SUPABASE_ANON_KEY.includes("YOUR_SUPABASE_ANON_KEY");
+  !SUPABASE_URL.includes("https://discord.com/oauth2/authorize?client_id=780310431716868117&response_type=code&redirect_uri=https%3A%2F%2Fnatthawatn-studio.github.io%2FNTD-SHOP%2F&scope=identify") &&
+  !SUPABASE_ANON_KEY.includes("of1sYzljQhCRYBeDb-JEKqMTA13Q6F4B");
 
 let supabase = null;
 
